@@ -20,4 +20,19 @@ Install VNC Viewer Desktop tool:
 sudo apt install realvnc-vnc-server realvnc-vnc-viewer -y
 ```
 
+## OAK-D Lite Setup
 
+https://docs.luxonis.com/projects/hardware/en/latest/pages/guides/raspberrypi/
+
+```sh
+sudo curl -fL https://docs.luxonis.com/install_dependencies.sh | bash
+```
+
+```sh
+python3 -m pip install depthai
+```
+
+```sh
+git clone https://github.com/luxonis/depthai-python.git
+cd depthai-python
+```
