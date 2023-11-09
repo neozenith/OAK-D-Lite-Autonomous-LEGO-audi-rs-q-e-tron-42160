@@ -25,10 +25,15 @@ sudo apt install realvnc-vnc-server realvnc-vnc-viewer -y
 https://docs.luxonis.com/projects/hardware/en/latest/pages/guides/raspberrypi/
 
 ```sh
-sudo curl -fL https://docs.luxonis.com/install_dependencies.sh | bash
+# sudo curl -fL https://docs.luxonis.com/install_dependencies.sh | bash
+
+# Ported a simplified working version of the above
+. ./scripts/install_dependencies.sh
 ```
 
 ```sh
+python3 -m venv .venv
+. ./.venv/bin/activate
 python3 -m pip install depthai
 ```
 
