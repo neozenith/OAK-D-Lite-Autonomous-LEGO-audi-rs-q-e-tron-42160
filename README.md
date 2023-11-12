@@ -41,3 +41,22 @@ python3 -m pip install depthai
 git clone https://github.com/luxonis/depthai-python.git
 cd depthai-python
 ```
+
+## HyperPixel4 Touchscreen
+
+```
+sudo cp ./scripts/config.txt /boot/config.txt
+```
+
+Since Debian Buster the Device Tree layer is provided and nothing is needed to be installed. Simply setting this config:
+
+```sh
+# https://github.com/pimoroni/hyperpixel4/issues/177
+dtoverlay=vc4-kms-dpi-hyperpixel4
+```
+
+## PiJuice Setup
+
+```sh
+sudo apt-get install pijuice-gui -y
+```
