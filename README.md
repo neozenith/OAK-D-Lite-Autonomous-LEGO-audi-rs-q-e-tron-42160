@@ -45,7 +45,7 @@ cd depthai-python
 ## HyperPixel4 Touchscreen
 
 ```
-sudo cp ./scripts/config.txt /boot/config.txt
+sudo cp ./scripts/config.txt /boot/firmware/config.txt
 ```
 
 Since Debian Buster the Device Tree layer is provided and nothing is needed to be installed. Simply setting this config:
