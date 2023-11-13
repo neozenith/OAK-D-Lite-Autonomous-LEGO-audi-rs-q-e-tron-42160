@@ -3,7 +3,7 @@
 # Some settings may impact device functionality. See link above for details
 
 # Uncomment some or all of these to enable the optional hardware interfaces
-dtparam=i2c_arm=on
+dtparam=i2c_arm=off
 #dtparam=i2s=on
 dtparam=spi=off
 
@@ -64,4 +64,10 @@ otg_mode=1
 
 # https://github.com/pimoroni/hyperpixel4/issues/177
 dtoverlay=vc4-kms-dpi-hyperpixel4
+
+# https://www.raspberrypi.com/documentation/computers/config_txt.html#force_eeprom_read
+# force_eeprom_read=0
+
+# GPIO twiddling
+# https://www.raspberrypi.com/documentation/computers/config_txt.html#gpio 
 
