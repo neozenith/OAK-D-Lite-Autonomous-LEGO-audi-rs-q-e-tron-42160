@@ -12,6 +12,12 @@ depthai = "^2.23.0.0"
 bleak = "^0.21.1"
 
 
+[tool.poetry.group.dev.dependencies]
+invoke = "^2.2.0"
+ruff = "^0.1.5"
+pytest = "^7.4.3"
+md-toc = "^8.2.2"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

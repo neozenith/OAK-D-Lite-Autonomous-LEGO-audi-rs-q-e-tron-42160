@@ -2,9 +2,27 @@
 
 Lego Autonomous Vehicle Build Audi RS Q e-tron 42160 using an OAK-D Lite Neural Camera and RaspberryPi 4B with PiJuice. https://www.lego.com/en-au/product/audi-rs-q-e-tron-42160
 
-## Raspberry Pi Setup
+![High Level Architecture Diagram: Lego Autonomous Vehice](diagrams/HighLevelArchitecture.png)
 
-### Setup VNC Viewer
+<!--TOC-->
+
+- [OAK-D-Lite-Autonomous-LEGO-audi-rs-q-e-tron-42160](#oak-d-lite-autonomous-lego-audi-rs-q-e-tron-42160)
+- [Raspberry Pi Setup](#raspberry-pi-setup)
+  - [Setup VNC Viewer](#setup-vnc-viewer)
+  - [OAK-D Lite Setup](#oak-d-lite-setup)
+  - [HyperPixel4 Touchscreen](#hyperpixel4-touchscreen)
+  - [PiJuice Setup](#pijuice-setup)
+- [Development](#development)
+  - [ssh](#ssh)
+  - [VSCode](#vscode)
+
+<!--TOC-->
+
+# Raspberry Pi Setup
+
+<details><summary>Click to expand</summary>
+  
+## Setup VNC Viewer
 
 Enable VNC Server:
 
@@ -60,3 +78,24 @@ dtoverlay=vc4-kms-dpi-hyperpixel4
 ```sh
 sudo apt-get install pijuice-gui -y
 ```
+
+</details>
+
+# Development
+
+You will likely want to clone this repo to a host computer AND to the RaspberryPi4.
+
+## ssh
+
+From the host computer you can `ssh` like:
+
+```sh
+ssh jpeak@jpeak-rpi4.local
+```
+
+## VSCode
+
+You will want to setup VSCode on both the host computer and the RaspberryPi4.
+
+You will also likely want to use your host computer [VSCode to remotely develop](https://code.visualstudio.com/docs/remote/ssh).
+

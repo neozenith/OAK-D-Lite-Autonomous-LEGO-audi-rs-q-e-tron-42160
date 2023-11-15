@@ -1,5 +1,4 @@
 # https://buwizz.com/BuWizz_3.0_API_3.6_web.pdf
-import time
 import asyncio
 import logging
 
