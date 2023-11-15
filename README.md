@@ -15,6 +15,7 @@ Lego Autonomous Vehicle Build Audi RS Q e-tron 42160 using an OAK-D Lite Neural 
 - [Development](#development)
   - [ssh](#ssh)
   - [VSCode](#vscode)
+- [TODO](#todo)
 
 <!--TOC-->
 
@@ -99,3 +100,5 @@ You will want to setup VSCode on both the host computer and the RaspberryPi4.
 
 You will also likely want to use your host computer [VSCode to remotely develop](https://code.visualstudio.com/docs/remote/ssh).
 
+# TODO
+ - https://rahulmahale.com/blogs/running-cronjob-at-reboot-on-raspberry-pi/
