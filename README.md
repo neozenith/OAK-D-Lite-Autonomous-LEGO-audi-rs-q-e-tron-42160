@@ -101,4 +101,5 @@ You will want to setup VSCode on both the host computer and the RaspberryPi4.
 You will also likely want to use your host computer [VSCode to remotely develop](https://code.visualstudio.com/docs/remote/ssh).
 
 # TODO
+ - Get `bleak` to talk to BuWizz controller https://github.com/hbldh/bleak/blob/master/examples/uart_service.py
  - https://rahulmahale.com/blogs/running-cronjob-at-reboot-on-raspberry-pi/
