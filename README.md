@@ -9,6 +9,7 @@ Lego Autonomous Vehicle Build Audi RS Q e-tron 42160 using an OAK-D Lite Neural 
 - [OAK-D-Lite-Autonomous-LEGO-audi-rs-q-e-tron-42160](#oak-d-lite-autonomous-lego-audi-rs-q-e-tron-42160)
 - [Raspberry Pi Setup](#raspberry-pi-setup)
   - [Setup VNC Viewer](#setup-vnc-viewer)
+  - [PyEnv](#pyenv)
   - [OAK-D Lite Setup](#oak-d-lite-setup)
   - [HyperPixel4 Touchscreen](#hyperpixel4-touchscreen)
   - [PiJuice Setup](#pijuice-setup)
@@ -37,6 +38,25 @@ Install VNC Viewer Desktop tool:
 
 ```sh
 sudo apt install realvnc-vnc-server realvnc-vnc-viewer -y
+```
+
+## PyEnv
+
+```sh
+git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
+export PATH=$PATH:$HOME/.pyenv/bin/
+
+pyenv install 3.10.13
+pyenv global 3.10.13
+```
+
+Update your `PATH` in your `~/.bashrc`
+
+
+Then activate on demand using:
+
+```sh
+eval "$(pyenv init --path)"
 ```
 
 ## OAK-D Lite Setup
