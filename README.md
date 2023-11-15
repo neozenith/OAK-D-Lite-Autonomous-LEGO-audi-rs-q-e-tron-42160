@@ -123,3 +123,4 @@ You will also likely want to use your host computer [VSCode to remotely develop]
 # TODO
  - Get `bleak` to talk to BuWizz controller https://github.com/hbldh/bleak/blob/master/examples/uart_service.py
  - https://rahulmahale.com/blogs/running-cronjob-at-reboot-on-raspberry-pi/
+ - https://docs.luxonis.com/en/latest/pages/slam_oak/
