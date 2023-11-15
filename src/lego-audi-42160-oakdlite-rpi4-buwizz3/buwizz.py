@@ -26,7 +26,7 @@ async def scan_device_services(device: BLEDevice, advertisement_data: Advertisem
 
     async with BleakClient(
         device,
-        services=advertisement_data.service_uuids,
+        # services=advertisement_data.service_uuids,
     ) as client:
         logger.info("connected")
 
