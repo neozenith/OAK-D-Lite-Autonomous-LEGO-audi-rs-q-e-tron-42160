@@ -11,6 +11,7 @@ Lego Autonomous Vehicle Build Audi RS Q e-tron 42160 using an OAK-D Lite Neural 
   - [Setup VNC Viewer](#setup-vnc-viewer)
   - [PyEnv](#pyenv)
   - [OAK-D Lite Setup](#oak-d-lite-setup)
+    - [Play with examples](#play-with-examples)
   - [HyperPixel4 Touchscreen](#hyperpixel4-touchscreen)
   - [PiJuice Setup](#pijuice-setup)
 - [Development](#development)
@@ -73,12 +74,24 @@ https://docs.luxonis.com/projects/hardware/en/latest/pages/guides/raspberrypi/
 ```sh
 python3 -m venv .venv
 . ./.venv/bin/activate
-python3 -m pip install depthai
+# If you're using Raspberry Pi, providing a Pi Wheels extra package url can significantly speed up the installation process by providing prebuilt binaries
+python3 -m pip install --extra-index-url https://www.piwheels.org/simple/ depthai-sdk depthai
 ```
+### Play with examples
 
 ```sh
 git clone https://github.com/luxonis/depthai-python.git
 cd depthai-python
+python3 -m venv .venv
+. ./.venv/bin/activate
+
+```
+
+```sh
+git clone https://github.com/luxonis/depthai-experiments.git
+cd depthai-experiments
+python3 -m venv .venv
+. ./.venv/bin/activate
 ```
 
 ## HyperPixel4 Touchscreen

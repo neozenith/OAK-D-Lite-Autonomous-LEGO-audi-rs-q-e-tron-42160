@@ -1,4 +1,4 @@
-# https://buwizz.com/BuWizz_3.0_API_3.6_web.pdf
+
 import asyncio
 import logging
 
@@ -11,14 +11,14 @@ logger = logging.getLogger(__name__)
 #TODO: https://github.com/hbldh/bleak/blob/master/examples/uart_service.py
 # Get down to each GATT Characteristic and start playing
 
-async def discover_buwizz_devices():
+async def discover_named_devices(name):
     print("scanning for 5 seconds, please wait...")
 
     devices = await BleakScanner.discover(
         return_adv=True, cb=dict(use_bdaddr=True)
     )
 
-    return [(d, a) for d, a in devices.values() if d.name and "buwizz" in d.name.lower()]
+    return [(d, a) for d, a in devices.values() if d.name and name in d.name.lower()]
 
 async def scan_device_services(device: BLEDevice, advertisement_data: AdvertisementData):
     logger.info("connecting to device...")
@@ -68,7 +68,7 @@ async def scan_device_services(device: BLEDevice, advertisement_data: Advertisem
 
 
 async def main():
-    buwizz_devices = await discover_buwizz_devices()
+    buwizz_devices = await discover_named_devices(name="buwizz")
     for d, a in buwizz_devices:
         await scan_device_services(d, a)
 
