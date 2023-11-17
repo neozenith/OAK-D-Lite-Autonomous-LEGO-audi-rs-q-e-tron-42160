@@ -47,6 +47,8 @@ sudo apt install realvnc-vnc-server realvnc-vnc-viewer -y
 git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
 export PATH=$PATH:$HOME/.pyenv/bin/
 
+
+
 pyenv install 3.10.13
 pyenv global 3.10.13
 ```
@@ -74,8 +76,9 @@ https://docs.luxonis.com/projects/hardware/en/latest/pages/guides/raspberrypi/
 ```sh
 python3 -m venv .venv
 . ./.venv/bin/activate
-# If you're using Raspberry Pi, providing a Pi Wheels extra package url can significantly speed up the installation process by providing prebuilt binaries
-python3 -m pip install --extra-index-url https://www.piwheels.org/simple/ depthai-sdk depthai
+python3 -m pip install poetry
+poetry install
+poetry shell
 ```
 ### Play with examples
 
