@@ -10,6 +10,6 @@ with OakCamera() as oak:
     # Synchronize & save all (encoded) streams
     oak.record([color.out.encoded, left.out.encoded, right.out.encoded], './', RecordType.VIDEO)
     # Show color stream
-    oak.visualize([color.out.camera], scale=2/3, fps=True)
+    # oak.visualize([color.out.camera], scale=2/3, fps=True)
 
     oak.start(blocking=True)

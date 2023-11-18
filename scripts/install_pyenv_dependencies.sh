@@ -1,5 +1,6 @@
 #! /bin/bash
 # Install dependencies required to build new versions of Python from PyEnv
+# https://www.samwestby.com/tutorials/rpi-pyenv
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install -y \
